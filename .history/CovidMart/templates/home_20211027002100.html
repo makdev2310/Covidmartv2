@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/home.css">
+    <title>Covidmart - Đặt hàng online mùa Covid</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="">Đăng ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " style="color: white;" href="login">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href=""><img style="width: 150px" src="static/images/CovidMart-logo.png" alt=""></a>
+                    </li>
+                    <li id="adress-form"><a href="#">TP. Hồ Chí Minh<i class="fas fa-sort-down"></i></a> </li>
+                    <li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
+                    <li>
+                        <button onclick="window.location.href='cart';"><i class="fas fa-shopping-cart"></i>Giỏ hàng</button>
+                    </li>
+
+                    <li><a href=""><span class="btn-content"><span class="btn-top"></span></span> Covid map!</a></li>
+                    <div class="adress-form">
+                        <div class="adress-form-content">
+                            <h2>Chọn địa chỉ nhận hàng <span id="adress-close">X Đóng </span> </h2>
+                            <form action="">
+                                <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                                <select name="">
+                            <option value="#">--Chọn địa điểm</option>
+                            <option value="#">Đà Nẵng</option>
+                        </select>
+                                <select name="">
+                            <option value="#">--Chọn QuậnHuyện</option>
+                            <option value="#">Đà Nẵng</option>
+                        </select>
+                                <select name="">
+                            <option value="#">--Chọn PhườngXã</option>
+                            <option value="#">Đà Nẵng</option>
+                        </select>
+                                <input type="text" placeholder="Số nhà, Tên đường">
+                                <button>Xác nhận</button>
+                            </form>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="navbar"></div>
+        </nav>
+        <section class="menu-bar">
+            <div class="container">
+                <div class="menu-bar-content">
+                    <ul>
+                        <li><a href="">Thực phẩm<i style="margin-left: 4px;" class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""> Thực phẫm tươi sống</a></li>
+                                        <ul>
+                                            <li><a href=""> Thịt heo các loại</a></li>
+                                            <li><a href=""> Thịt bò các loại</a></li>
+                                            <li><a href=""> Thịt gà các loại</a></li>
+                                            <li><a href=""> Trứng gà, vịt, cút</a></li>
+                                            <li><a href=""> Cá biển, nước ngọt</a></li>
+                                            <li><a href=""> Hải sản các loại</a></li>
+                                            <li><a href=""> Thực phẫm sơ chế</a></li>
+                                            <li><a href=""> Thực phẫm đông lạnh</a></li>
+                                        </ul>
+                                    <li><a href=""> Rau củ, trái cây</a></li>
+                                        <ul>
+                                            <li><a href=""> Rau xanh các loại</a></li>
+                                            <li><a href=""> Củ quả các loại</a></li>
+                                            <li><a href=""> Nắm tươi các loại</a></li>
+                                            <li><a href=""> Trái cây tươi ngon</a></li>
+                                        </ul>
+                                </ul>
+                            </div> 
+                        </li>
+                        <li><a href="">Dầu ăn, gia vị <i style="margin-left: 4px;" class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""> Dầu ăn</a></li>
+                                    <li><a href=""> Gia vị nêm sẵn</a></li>
+                                    <li><a href=""> Gia vị các loại</a></li>
+                                        <ul>
+                                            <li><a href=""> Đường, muối, gia vị</a></li>
+                                            <li><a href=""> Hạt nêm, bột ngọt</a></li>
+                                            <li><a href=""> Tương ớt, tương đen</a></li>
+                                            <li><a href=""> Nước tương các loại</a></li>
+                                            <li><a href=""> Dầu hào, giấm, bơ</a></li>
+                                            <li><a href=""> Bột ớt siêu cay</a></li>
+                                            <li><a href=""> Nước chấm, mắm tôn</a></li>
+                                        </ul>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href=""> Đồ tiêu dùng</a><i style="margin-left: 4px;" class="fas fa-sort-down"></i>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Đồ uống các loại</a><i style="margin-left: 4px;" class="fas fa-sort-down"></i>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""> Nước ngọt các loại</a></li>
+                                    <li><a href=""> CAfe, trà các loại</a></li>
+                                    <li><a href=""> Nước uống tăng lực</a></li>
+                                    <li><a href=""> Nước uống trái cây</a></li>
+                                    <li><a href=""> Bia, nước có cồn</a></li>
+                                    <li><a href=""> Nước suối, nước khoáng</a></li>
+                                    <li><a href=""> Trà sữa đóng trai</a></li>
+                                    <li><a href=""> Nước yến, cốt gà/a></li>
+                                    <li><a href=""> Mật ong, bột nghệ</a></li>
+                                    <li><a href=""> Rượu ngon các loại</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Fast food <i style="margin-left: 4px;" class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                    <li><a href=""> Phụ kiện A</a></li>
+                                    <li><a href=""> Phụ kiện B</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Chăm sóc cá nhân <i style="margin-left: 4px;" class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    
+                                    <li><a href=""> Dành cho nam</a></li>
+                                        <ul>
+                                            <li><a href=""> Dầu gội, dầu xả</a></li>
+                                            <li><a href=""> Lăn xịt khử mùi</a></li>
+                                            <li><a href=""> Dao, bọt cạo râu</a></li>
+                                            <li><a href=""> Nước súc miệng, tăm</a></li>
+                                            <li><a href=""> Sửa rửa mặt</a></li>
+                                        </ul>
+                                    <li><a href=""> Dành cho nữ</a></li>
+                                        <ul>
+                                            <li><a href=""> Tẩy trang, rửa mặt</a></li>
+                                            <li><a href=""> Kem ủ dưỡng tóc</a></li>
+                                            <li><a href=""> Chăm sóc da mặt</a></li>
+                                            <li><a href=""> Dưỡng thể, chóng nắng</a></li>
+                                            <li><a href=""> Mỹ phẫm </a></li>
+                                        </ul>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">Thời trang <i style="margin-left: 4px;" class="fas fa-sort-down"></i></a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href=""></a>Hàng mới về</li>
+                                    <li><a href=""></a>Áo
+                                        <ul>
+                                            <li><a href=""></a>Áo sơ mi</li>
+                                            <li><a href=""></a>Áo thun</li>
+                                            <li><a href=""></a>Áo Vest</li>
+                                            <li><a href=""></a>Áo khoác</li>
+                                            <li><a href=""></a>Áo len</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href=""></a>Quần
+                                        <ul>
+                                            <li><a href=""></a>Quần dài</li>
+                                            <li><a href=""></a>Quần jean</li>
+                                            <li><a href=""></a>Quần lửng</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ----------------------SLider------------------------- -->
+    <div>
+        <section class="slider">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="slider-content-left">
+                        <div class="slider-content-left-top-container">
+                            <div class="slider-content-left-top">
+                                <a href=""><img src="static/images/tieude1.jpg" alt=""></a>
+                                <a href=""><img src="static/images/tieude2.jpg" alt=""></a>
+                                <a href=""><img src="static/images/tieude3.jpg" alt=""></a>
+                                <a href=""><img src="static/images/tieude4.jpg" alt=""></a>
+                                <a href=""><img src="static/images/tieude5.jpg" alt=""></a>
+                            </div>
+                            <div class="slider-content-left-top-btn">
+                                <i class="fas fa-chevron-left"></i>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="slider-content-left-bottom">
+                            <li class="active">Tiêu đề 1</li>
+                            <li>Tiêu đề 2</li>
+                            <li>Tiêu đề 3</li>
+                            <li>Tiêu đề 4</li>
+                            <li>Tiêu đề 5</li>
+                        </div>
+                    </div>
+                    <div class="slider-content-right">
+                        <li>
+                            <a href=""><img src="image/img1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="image/img2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="image/img3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="image/img4.jpg" alt=""></a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="baner-one">
+            <div class="container">
+                <img src="image/baner1.jpg" alt="">
+            </div>
+        </section>
+        <!-------------------slider-product----- -->
+        <section class="slider-product-one">
+            <div class="container">
+                <div class="slider-product-one-content">
+                    <div class="slider-product-one-content-title">
+                        <h2>Mặt Hàng Online Mỗi Ngày</h2>
+                    </div>
+                    <div class="slider-product-one-content-container">
+                        <div class="slider-product-one-content-items-content">
+                            <div class="slider-product-one-content-items">
+                                <div class="slider-product-one-content-item">
+                                    <img src="static/images/product1.jpg" alt="">
+                                    <div class="slider-product-one-content-item-text">
+                                        <li><img src="image/icon1.png" alt=""> <p>Trợ giá mùa dịch</p></li>
+                                        <li>Thịt càng ghẹ đông lạnh Ngon Ngon khay 250g</li>
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">150.000<sup>đ</sup></a> <span>-6%</span></li>
+                                        <li>90.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-one-content-item">
+                                    <img src="static/images/product2.jpg" alt="">
+                                    <div class="slider-product-one-content-item-text">
+                                        <li><img src="image/icon1.png" alt=""> <p>Trợ giá mùa dịch</p></li>
+                                        <li>Nấm mỡ trắng hộp 150g</li>
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">56.000<sup>đ</sup></a> <span>-9%</span></li>
+                                        <li>50.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-one-content-item">
+                                    <img src="static/images/product3.jpg" alt="">
+                                    <div class="slider-product-one-content-item-text">
+                                        <li><img src="image/icon1.png" alt=""> <p>Trợ giá mùa dịch</p></li>
+                                        <li>Bếp nướng than thép sơn tĩnh điện Rainy 38cm</li>
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">349.000<sup>đ</sup></a> <span>-10%</span></li>
+                                        <li>314.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="slider-product-one-content-item">
+                                    <img src="static/images/product4.jpg" alt="">
+                                    <div class="slider-product-one-content-item-text">
+                                        <li><img src="image/icon1.png" alt=""> <p>Trợ giá mùa dịch</p></li>
+                                        <li>Áo khoác nam</li>
+                                        <li>Online giá rẻ</li>
+                                        <li><a href="">129.000<sup>đ</sup></a> <span>-5%</span></li>
+                                        <li>120.000<sup>đ</sup></li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </li>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="slider-product-one-content-btn">
+                            <i class="fas fa-chevron-left fa-chevron-left-two"></i>
+                            <i class="fas fa-chevron-right fa-chevron-right-two"></i>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------Product Gallery--------------- -->
+        <section class="product-gallery-one">
+            <div class="container">
+                <div class="product-gallery-one-content">
+                    <div class="product-gallery-one-content-title">
+                        <h2>NHỮNG MẶT HÀNG GẦN KHU VỰC CỦA BẠN</h2>
+                        <ul>
+                            <li><a href="">Thịt bò, rau củ ,trái cây</a></li>
+                            <li><a href="">Mỳ ăn liền</a></li>
+                            <li><a href="">Đồ gia dụng</a></li>
+                            <li><a href="">Xem tất cả</a></li>
+                        </ul>
+                    </div>
+                    <div class="product-gallery-one-content-product">
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product5.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Thịt đùi heo C.P khay 500g</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">80.000<sup>đ</sup></a> <span>-3%</span></li>
+                                <li>77.000<sup>đ</sup></li>
+                        
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product6.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Thăn bò Úc khay 250g</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">158.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>149.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product7.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Cánh gà giữa nhập khẩu đông lạnh túi 500g</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">58.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>50.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product8.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Hộp 30 trứng cút tươi T.Food 30 trứng</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">30.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>25.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product9.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Cá trích nhập khẩu đông lạnh túi 500g</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">32.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>29.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product10.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Hành tím Ấn Độ túi 300g </li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">25.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>19.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product11.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Táo Gala mini nhập khẩu hộp 1kg</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">49.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>40.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product12.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Thùng 30 gói mì Hảo Hảo tôm chua cay 75g</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">106.000<sup>đ</sup></a> <span>-7%</span></li>
+                                <li>99.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product13.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Bộ bình trà thuỷ tinh Bách Hóa XANH GB12126 1200ML</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">160.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>154.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="product-gallery-one-content-product-item">
+                            <img src="static/images/product14.jpg" alt="">
+                            <div class="product-gallery-one-content-product-item-text">
+                                <li><img src="image/icon1.png" alt="">
+                                    <p>Trợ giá mùa dịch</p>
+                                </li>
+                                <li>Tiêu đen hạt Phú Quốc có nắp xay Minh Hà hũ 40g (hũ có nắp xay)</li>
+                                <li>Online giá rẻ</li>
+                                <li><a style="color: #333;" href="">59.000<sup>đ</sup></a> <span>-6%</span></li>
+                                <li>50.000<sup>đ</sup></li>
+                                
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------Product-gallery two -->
+        <!--- <section class="product-gallery-two">
+            <div class="container">
+                <div class="product-gallery-two-content">
+                    <div class="product-gallery-two-content-right">
+                        <img src="image/pg2.1.png" alt="">
+                    </div>
+                    <div class="product-gallery-two-content-left">
+                        <div class="product-gallery-two-content-left-top">
+                            <li class="active">Đồng hồ thông minh</li>
+                            <li>Đồng hồ thời trang nam</li>
+                            <li>Đồng hồ thời trang nữ</li>
+                            <li>Đồng hồ thời trẻ em</li>
+                            <li><a href="">Xem tất cả</a><i class="fas fa-angle-right"></i></li>
+                        </div>
+                        <div class="product-gallery-two-content-left-bottom">
+                            <div class="product-gallery-two-content-left-bottom-item">
+                                <img src="static/images/product15.jpg" alt="">
+                                <div class="product-gallery-two-content-left-bottom-item-text">
+                                    <li>Đặt trước đến 16/09</li>
+                                    <li>Samsung Galaxy ABC</li>
+                                    <li>Hàng sắp về</li>
+                                    <li>15.000.000<sup>đ</sup></li>
+                                    <li>Ưu đãi khủng</li>
+                                </div>
+
+                            </div>
+                            <div class="product-gallery-two-content-left-bottom-item">
+                                <img src="static/images/product16.jpg" alt="">
+                                <div class="product-gallery-two-content-left-bottom-item-text">
+                                    <li>Đặt trước đến 16/09</li>
+                                    <li>Samsung Galaxy ABC</li>
+                                    <li>Hàng sắp về</li>
+                                    <li>15.000.000<sup>đ</sup></li>
+                                    <li>Ưu đãi khủng</li>
+                                </div>
+
+                            </div>
+                            <div class="product-gallery-two-content-left-bottom-item">
+                                <img src="static/images/product17.jpg" alt="">
+                                <div class="product-gallery-two-content-left-bottom-item-text">
+                                    <li>Đặt trước đến 16/09</li>
+                                    <li>Samsung Galaxy ABC</li>
+                                    <li>Hàng sắp về</li>
+                                    <li>15.000.000<sup>đ</sup></li>
+                                    <li>Ưu đãi khủng</li>
+                                </div>
+
+                            </div>
+                            <div class="product-gallery-two-content-left-bottom-item">
+                                <img src="static/images/product18.jpg" alt="">
+                                <div class="product-gallery-two-content-left-bottom-item-text">
+                                    <li>Đặt trước đến 16/09</li>
+                                    <li>Samsung Galaxy ABC</li>
+                                    <li>Hàng sắp về</li>
+                                    <li>15.000.000<sup>đ</sup></li>
+                                    <li>Ưu đãi khủng</li>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+    </div>
+    <script src="static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/home.css">
+    <title>Covidmart - Đặt hàng online mùa Covid</title>
+</head>
+
+<body>
+    <header>
+        <img src="image/anh1.png" alt="">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href=""><img style="width: 1500px" src="static/images/CovidMart-logo.png" alt=""></a>
+                </li>
+                <li id="adress-form"><a href="#">TP. Hồ Chí Minh<i class="fas fa-sort-down"></i></a> </li>
+                <li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
+                <li>
+                    <a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
+                <li>
+                    <img src="upload/user.png" alt="" style="width:25px;height:25px;">
+
+                    <a href="">Tài khoản 
+                   <br> user
+                </a>
+                </li>
+                <li><a href="cart">Lịch sử <br> đơn hàng</a></li>
+                <li><a href=""><span class="btn-content"><span class="btn-top"></span></span> Covid map!</a></li>
+                <div class="adress-form">
+                    <div class="adress-form-content">
+                        <h2>Chọn địa chỉ nhận hàng <span id="adress-close">X Đóng </span> </h2>
+                        <form action="">
+                            <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                            <select name="">
+                           <option value="#">--Chọn địa điểm</option>
+                           <option value="#">Đà Nẵng</option>
+                       </select>
+                            <select name="">
+                           <option value="#">--Chọn QuậnHuyện</option>
+                           <option value="#">Đà Nẵng</option>
+                       </select>
+                            <select name="">
+                           <option value="#">--Chọn PhườngXã</option>
+                           <option value="#">Đà Nẵng</option>
+                       </select>
+                            <input type="text" placeholder="Số nhà, Tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href=""><i class="fas fa-mobile-alt"></i> Thực phẩm</a></li>
+                    <li><a href=""><i class="fas fa-laptop"></i> Đồ tiêu dùng</a></li>
+                    <li><a href=""><i class="fas fa-tablet"></i> Đồ đóng hộp</a></li>
+                    <li><a href=""><i class="fas fa-headphones-alt"></i> Fast food <i style="margin-left: 4px;" class="fas fa-sort-down"></i></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href=""> Phụ kiện A</a></li>
+                                <li><a href=""> Phụ kiện B</a></li>
+                                <li><a href=""> Phụ kiện A</a></li>
+                                <li><a href=""> Phụ kiện B</a></li>
+                                <li><a href=""> Phụ kiện A</a></li>
+                                <li><a href=""> Phụ kiện B</a></li>
+                                <li><a href=""> Phụ kiện A</a></li>
+                                <li><a href=""> Phụ kiện B</a></li>
+                                <li><a href=""> Phụ kiện A</a></li>
+                                <li><a href=""> Phụ kiện B</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="giohang">
+        <div class="content-giohang">
+            <li><a href=""> Giỏ hàng </a></li>
+        </div>
+    </div>
+    <div class="menu107">
+        <div class="soluong">
+            <table style="width:200% ;">
+                <tr>
+                    <th>Tất cả sản phẫm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th><img src="upload/trash.svg" alt="delete" style="width:20px;height:20px;"></th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> Ba rọi heo khay 300g<br>
+                        <img src="upload/thit.jpg" alt="" style="width:100px;height:100px;">
+                    </td>
+                    <td>64.500</td>
+                    <td>
+                        <div class="btnincrease">
+                            <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value--;return false;" type='button' value='-' />
+                            <input id='quantity' min='1' name='quantity' type='text' value='1' / style="width: 50px;">
+                            <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+                        </div>
+                    </td>
+                    <td>64.500đ</td>
+                    <th><img src="upload/trash.svg" alt="delete" style="width:20px;height:20px;"></th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Sầu riêng Ri 6 Nguyên múi 500g<br>
+                        <img src="upload/fruit.jpg" alt="" style="width:100px;height:100px;">
+                    </td>
+                    <td>149.000đ</td>
+                    <td>
+                        <div class="btnincrease2">
+                            <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value--;return false;" type='button' value='-' />
+                            <input id='quantity' min='1' name='quantity' type='text' value='1' / style="width: 50px;">
+                            <input onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+                        </div>
+                    </td>
+                    <td>149.000đ</td>
+                    <th><img src="upload/trash.svg" alt="delete" style="width:20px;height:20px;"></th>
+                </tr>
+            </table>
+        </div>
+        <div class="diachigiao">
+            <table>
+                <tr>
+                    <th colspan="2"><pre>Giao tới                                                       thay đổi</pre></th>
+                </tr>
+                <tr>
+                    <td>Phan Thành Trung</td>
+                    <td>0947192647</td>
+                </tr>
+                <tr>
+                    <td colspan="2">khu phố 6,phường Linh Trung, Thủ Đức, tp Hồ Chí Minh</td>
+                </tr>
+            </table><br>
+            <table class="Voucher">
+                <tr>
+                    <td><pre>Voucher khuyến mãi                                    có thể chọn 2
+                    <br><p> Chọn hoặc nhập khuyến mãi</p>
+                </pre></td>
+                </tr>
+            </table><br>
+            <table class="Tinh">
+                <tr>
+                    <td><pre>
+                    Tạm tính                                                    0đ
+                    Giảm giá                                                    0đ
+                </td></pre>
+                </tr>
+                <tr>
+                    <td><pre>
+                    Tổng cộng                                                 0đ</td></pre>
+                </tr>
+            </table><br>
+            <table class="Mua">
+                <tr>
+                    <th>Thanh Toán</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
